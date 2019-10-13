@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
+	<title></title>
+</head>
+<body>
+
+	<div class="Introdution">
+	<header>
+	<div class ="row text-center">
+    <div class="col-md-3 offset-md-4">
+	<h1 class="font-weight-bold">Garden Care</h1>
+	</div> 
+    </div>
+
+    <br>
+
+    <div class ="Data1">
+    <div class ="row text-center">
+    <div class="col-md-3 offset-md-4">
+    	<label for="Data Analized"> Data Analized: Solo Humidity, Humidity, Artificial Light , Solar Light</label> 
+    </div>
+	</div>
+	</div>
+
+    <div class ="Data1">
+    <div class ="row text-center">
+    <div class="col-md-3 offset-md-4">
+    	<form method="get">
+		<div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+		<input id="init" type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2" name="init" required />
+		<div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+		<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+		</div>
+		</div>
+		</div>
+
+    </div>
+	</div>
+	</div>
+    </header>
+
+    <br>
+ 
+    <div class ="Data2">
+    <div class ="row text-center">
+    <div class="col-md-3 offset-md-4">
+        <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
+	    <input id="end" type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2" name="end" required />
+		<div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
+		<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+        </div>
+		</div>
+		</div>
+	</div>
+	</div>
+	</div>
+    
+    <br>
+    
+	<div class ="Button">
+    <div class ="row text-center">
+    <div class="col-md-3 offset-md-4">
+        <div id="btn-col" class="col-12">
+		<button id="submit-btn" type="submit" name="button" class="btn btn-success">Atualize Average</button>
+		</div>
+    	</form>
+    </div>
+	</div>
+	</div>
+
+<br>
+<br>
+
+
+    
+ 	<div class="data-container">	
+	<div class="row text-center">
+	<div class="col-md-2 offset-md-2">
+		<div class="card-body">
+		<h2 class="font-weight-bold"><i class="fas fa-seedling fa-2x"></i><span id="avg_SHumidity"></span></h2>
+		</div>
+		<h6 class="font-weight-bold">Solo Humidity Average</h6>
+		</div>
+
+		<div class="col-md-2 border-left">
+		<div class="card-body">
+		<h2 class="font-weight-bold"><i class="fas fa-thermometer-three-quarters fa-2x"></i><span id= "avg_Humy"></span></h2>
+		</div>
+		<h6 class="font-weight-bold"> Humity Average.</h6>
+		</div>
+
+		<div class="col-md-2 border-left">
+		<div class="card-body">
+		<h2  class="font-weight-bold"><i class="fas fa-lightbulb fa-2x"></i><span id="avg_Alight"></span></h2>
+		</div>
+		<h6 class="font-weight-bold"> Artificial Light Average</h6>
+		</div>
+
+		<div class="col-md-2 border-left">
+		<div class="card-body">
+		<h2 class="font-weight-bold"><i class="fas fa-sun fa-2x"></i><span id="avg_Slight"></span></h2>
+		</div>
+		<h6 class="font-weight-bold"> Solar Light Average</h6>
+		</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	</div>
+
+
+<br>
+<br>
+<br>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			
+			<table style="width:100%">
+			  <tr>
+			    <th> Name </th>
+			    <th> Ideal Solo Average </th> 
+			    <th> Ideal Humidity </th> 
+			    <th> Ideal Sun Light </th> 
+			  </tr>
+			  <tr>
+			    <td> Flor Do Deserto </td>
+			    <td> 60 two days a week </td>
+			    <td> 70 for day </td>
+			    <td> 12h per day</td>
+			  </tr>
+			  <tr>
+			    <td> Samambaia </td>
+			    <td> 60 for every day</td> 
+			    <td> 40 per day </td>
+			    <td> 3h per day </td>
+			  </tr>
+			    <tr>
+			    <td> Palmeira Fênix </td>
+			    <td> 60 for every day</td> 
+			    <td> 40 per day </td>
+			    <td> 10h per day </td>
+			  </tr>
+			    <tr>
+			    <td> Hera </td>
+			    <td> 60 at every 10 days</td>
+			    <td> 50 for day </td>
+			    <td> 7h per day</td>
+			  </tr>
+			    <tr>
+			    <td> Bulbine </td>
+			    <td> 60 at every day </td>
+			    <td> 70 for day </td>
+			    <td> Adabtable to Sun or Shadow</td>
+			  </tr>
+			    <tr>
+			    <td> Chifre de Veado </td>
+			    <td> 60 at two days a week </td>
+			    <td> 60 for day </td>
+			    <td> 5h for day</td>
+			  </tr>
+			    <tr>
+			    <td> Jabuticabeira </td>
+			    <td> 50 at every day </td>
+			    <td> 60 for day </td>
+			    <td> Sun all day </td>
+			  </tr>
+			    <tr>
+			    <td> Falsa Murta </td>
+			    <td> 60 at every day </td>
+			    <td> 70 for day </td>
+			    <td> 10h for day </td>
+			  </tr>
+			    <tr>
+			    <td> Jasmin dos Poetas </td>
+			    <td> 50 at every day </td>
+			    <td> 70 for day </td>
+			    <td> 12h for day</td>
+			  </tr>
+			    <tr>
+			    <td> Beijinho </td>
+			    <td> 80 at every day </td>
+			    <td> 70 for day </td>
+			    <td> 2h for day</td>
+			  </tr>
+			</table>
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript" src="js/chart.js"></script>
+<script type="text/javascript" src="js/moment.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
+
